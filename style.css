@@ -130,4 +130,10 @@ a {
 }
 .transform a {
   margin-top: 2rem;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  font-size: 0.9rem;
+}
+.transform a::after {
+  content: "";
 }/*# sourceMappingURL=style.css.map */

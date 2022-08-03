@@ -161,6 +161,14 @@ a {
 
     a {
         margin-top: 2rem;
+        font-weight: $font-wght1;
+        font-family: $font2;
+        font-size: 0.9rem;
+
+        &::after {
+            content: '';
+            
+        }
     }
     
 }
