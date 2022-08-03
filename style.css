@@ -5,6 +5,25 @@
   padding: 0;
   font-size: 18px;
   font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+p {
+  color: hsl(210deg, 4%, 67%);
+  padding: 1rem;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .header {
@@ -97,4 +116,18 @@
   text-align: center;
   font-weight: 900;
   margin-bottom: 3rem;
+}
+
+.transform img {
+  width: 100%;
+}
+.transform aside {
+  background-color: white;
+  margin-top: -5px;
+}
+.transform h2 {
+  padding-top: 3.5rem;
+}
+.transform a {
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */

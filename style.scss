@@ -25,8 +25,24 @@ $font-wght3 : 900;
     padding: 0;
     font-size: 18px;
     font-family: $font1;
+    text-align: center;
 }
 
+h2 {
+    font-size: 1.8rem;
+    font-family: $font2;
+    font-weight: $font-wght3;
+}
+p {
+    color: $clr-neut4;
+    padding: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 2rem;
+}
+a {
+    text-decoration: none; 
+    color: black;
+}
 .header {
     height: 80px;
     background-color: #3ebfff;
@@ -91,6 +107,7 @@ $font-wght3 : 900;
     perspective: 10px;
 }
 
+
 .intro {
     position: relative;
     display: flex;
@@ -126,4 +143,24 @@ $font-wght3 : 900;
         font-weight: $font-wght3;
         margin-bottom: 3rem;
     }
+}
+
+.transform {
+    img {
+        width: 100%;
+    }
+
+    aside {
+        background-color: white;
+        margin-top: -5px;
+    }
+
+    h2 {
+        padding-top: 3.5rem;
+    }
+
+    a {
+        margin-top: 2rem;
+    }
+    
 }
