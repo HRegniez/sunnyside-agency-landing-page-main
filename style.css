@@ -83,6 +83,39 @@ a {
   perspective: 10px;
 }
 
+.yellow {
+  background-color: hsl(51deg, 100%, 49%);
+}
+
+.red {
+  background-color: hsl(7deg, 99%, 70%);
+}
+
+.green {
+  color: hsl(167deg, 40%, 24%);
+}
+
+.blue {
+  color: hsl(198deg, 62%, 26%);
+}
+
+.main {
+  margin-bottom: -4px;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  display: block;
+  z-index: -1;
+  opacity: 30%;
+  border-radius: 0.2rem;
+  transition: opacity 0.3s ease-in;
+}
+
 .intro {
   position: relative;
   display: flex;
@@ -118,22 +151,115 @@ a {
   margin-bottom: 3rem;
 }
 
+main a {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0 0.5rem;
+}
+main a:hover .underline {
+  opacity: 1;
+}
+
 .transform img {
   width: 100%;
 }
 .transform aside {
   background-color: white;
   margin-top: -5px;
+  position: relative;
+  padding-bottom: 3.5rem;
 }
 .transform h2 {
   padding-top: 3.5rem;
 }
-.transform a {
-  margin-top: 2rem;
-  font-weight: 600;
-  font-family: "Fraunces", serif;
-  font-size: 0.9rem;
+
+.standOut {
+  display: flex;
+  flex-direction: column-reverse;
 }
-.transform a::after {
-  content: "";
+.standOut img {
+  width: 100%;
+}
+.standOut aside {
+  background-color: white;
+  padding: 3.5rem 0;
+}
+
+.part2 {
+  position: relative;
+}
+.part2 picture {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+.part2 img {
+  width: 100vw;
+}
+.part2 h2 {
+  padding-top: 22rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+}
+.part2 p {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  padding-bottom: 2rem;
+}
+
+.part3 {
+  background-color: white;
+  padding-top: 3rem;
+}
+.part3 h2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 3.5rem;
+  color: hsl(210deg, 4%, 67%);
+  font-weight: 900;
+}
+.part3 img {
+  width: 20%;
+  border-radius: 50%;
+}
+.part3 p {
+  color: hsl(213deg, 9%, 39%);
+  margin: 0.5rem 0;
+}
+.part3 h3 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.part3 h4 {
+  font-size: 0.8rem;
+  color: hsl(210deg, 4%, 67%);
+  margin-bottom: 4.5rem;
+}
+
+.part4 {
+  width: 100%;
+}
+.part4 div {
+  display: flex;
+  margin-bottom: -3px;
+}
+.part4 img {
+  width: 100%;
+}
+
+footer {
+  background-color: hsla(166.6deg, 57.4%, 39.6%, 0.78);
+  margin-top: -4px;
+  padding: 4rem;
+}
+footer .logo {
+  color: hsl(167deg, 40%, 24%);
 }/*# sourceMappingURL=style.css.map */
