@@ -277,7 +277,7 @@ main {
 .part4 {
     div {
         display: flex;
-        margin-bottom: -3px;
+        margin-bottom: -4px;
     }
     width: 100%;
 
@@ -289,9 +289,38 @@ main {
 footer {
     background-color: hsla(166.6, 57.4%, 39.6%, 0.78);
     margin-top: -4px;
-    padding: 4rem;
+    padding: 4rem 2rem;
+    
 
     .logo{
-        color: $clr-prim3;
+        color: $clr-prim5;
+        margin-bottom: 1.5rem;
+        width: 70%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    li {
+        list-style-type: none;
+
+    }
+    a {
+        color: $clr-prim5;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .ulIcons {
+        width: 60%;
+        margin: 6rem auto 3rem auto;
+
+        img {
+            width: 120%;
+        }
     }
 }

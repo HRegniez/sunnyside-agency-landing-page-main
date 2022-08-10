@@ -249,7 +249,7 @@ main a:hover .underline {
 }
 .part4 div {
   display: flex;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
 }
 .part4 img {
   width: 100%;
@@ -258,8 +258,32 @@ main a:hover .underline {
 footer {
   background-color: hsla(166.6deg, 57.4%, 39.6%, 0.78);
   margin-top: -4px;
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 footer .logo {
-  color: hsl(167deg, 40%, 24%);
+  color: hsl(168deg, 34%, 41%);
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  color: hsl(168deg, 34%, 41%);
+}
+footer a:hover {
+  color: white;
+}
+footer .ulIcons {
+  width: 60%;
+  margin: 6rem auto 3rem auto;
+}
+footer .ulIcons img {
+  width: 120%;
 }/*# sourceMappingURL=style.css.map */
