@@ -23,7 +23,7 @@ $font-wght3 : 900;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: calc(18px + 1vw);
     font-family: $font1;
     text-align: center;
 }
@@ -229,7 +229,7 @@ main {
         width: 100vw;
     }
     h2 {
-        padding-top: 22rem;
+        padding-top: calc(20rem + 8vh);
         font-size: 1.5rem;
         padding-bottom: 0.4rem;
     }
@@ -293,9 +293,9 @@ footer {
     
 
     .logo{
-        color: $clr-prim5;
+
         margin-bottom: 1.5rem;
-        width: 70%;
+        fill: $clr-prim3;
     }
     ul {
         display: flex;
@@ -308,7 +308,7 @@ footer {
 
     }
     a {
-        color: $clr-prim5;
+        color: $clr-prim3;
 
         &:hover {
             color: white;
