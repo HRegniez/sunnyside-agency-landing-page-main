@@ -205,14 +205,14 @@ main a:hover .underline {
   width: 100vw;
 }
 .part2 h2 {
-  padding-top: calc(15rem + 8vh);
+  padding-top: calc(13rem + 24vw);
   font-size: 1.3rem;
   padding-bottom: 0.4rem;
 }
 .part2 p {
   line-height: 1.4;
   font-size: 0.75rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .part3 {
