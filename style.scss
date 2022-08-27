@@ -330,3 +330,35 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 500px) {
+    .header {
+        &_contact {
+            background-color: $clr-neut5;
+            padding: 0.5rem 1rem;
+            
+        }
+        &_nav {
+            width: 40%;
+            ul {
+                position:initial;
+                transform: translateY(0);
+                background-color: #3ebfff;
+                flex-direction: row;
+                justify-content: space-around;
+                width: auto;
+                min-height: auto;
+                padding-top: 1.5rem;
+                
+            }
+            a {
+                        font-size: 0.5rem;
+                        color: $clr-neut5;
+                    }
+        }
+        &_burger {
+            display: none;
+        }
+        
+    }
+}

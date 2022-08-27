@@ -291,4 +291,31 @@ footer .ulIcons {
 }
 footer .ulIcons img {
   width: 120%;
+}
+
+@media screen and (min-width: 500px) {
+  .header_contact {
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 0.5rem 1rem;
+  }
+  .header_nav {
+    width: 40%;
+  }
+  .header_nav ul {
+    position: initial;
+    transform: translateY(0);
+    background-color: #3ebfff;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    min-height: auto;
+    padding-top: 1.5rem;
+  }
+  .header_nav a {
+    font-size: 0.5rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .header_burger {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
