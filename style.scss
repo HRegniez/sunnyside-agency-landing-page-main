@@ -11,6 +11,7 @@ $clr-neut2: hsl(213, 9%, 39%);
 $clr-neut3: hsl(232, 10%, 55%);
 $clr-neut4: hsl(210, 4%, 67%);
 $clr-neut5: hsl(0, 0%, 100%);
+$clr-neut6: hsla(0, 0%, 100%, 0);
 
 $font1 : 'Barlow', sans-serif;
 $font2 : 'Fraunces', serif;
@@ -27,6 +28,8 @@ $font-wght3 : 900;
     font-family: $font1;
     text-align: center;
 }
+
+
 
 h2 {
     font-size: 1.4rem;
@@ -79,11 +82,12 @@ a {
             margin-bottom: 2rem;
         }
 
-        a {
-            text-decoration: none;
+        
+    }
+    &_link {
+        text-decoration: none;
             color: $clr-neut1;
             font-size: 1.1rem;
-        }
     }
 
     .ul-active {
@@ -190,6 +194,7 @@ main {
     }
 }
 .transform {
+    background-color: $clr-neut5;
     img {
         width: 100%;
     }
@@ -210,6 +215,7 @@ main {
 .standOut {
     display: flex;
     flex-direction: column-reverse;
+    background-color: $clr-neut5;
 
     img {
         width: 100%;
@@ -330,20 +336,26 @@ footer {
         }
     }
 }
+.attribution {
+    font-size: 0.6rem;
+}
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
     .header {
         &_contact {
             background-color: $clr-neut5;
             padding: 0.5rem 1rem;
-            
+            color: $clr-neut1;
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            font-family: $font2;
         }
         &_nav {
             width: 40%;
             ul {
                 position:initial;
                 transform: translateY(0);
-                background-color: #3ebfff;
+                background-color: $clr-neut6;
                 flex-direction: row;
                 justify-content: space-around;
                 width: auto;
@@ -351,14 +363,108 @@ footer {
                 padding-top: 1.5rem;
                 
             }
-            a {
-                        font-size: 0.5rem;
-                        color: $clr-neut5;
-                    }
         }
         &_burger {
             display: none;
         }
+        &_link {
+            font-size: 0.5rem;
+            color: $clr-neut5;
+        }
+    }
+    .flex {
+        display: flex;
+        flex-direction: row-reverse;
         
+        aside {
+            flex: 1;
+            margin-top: 0px;
+            padding: 2.5rem 2rem 0 2rem;
+            min-width: 50%;
+            margin: 0;
+            text-align: left;
+            p {
+                font-size: 0.45rem;
+                line-height: 0.8rem;
+                padding-bottom: 1rem;
+            }
+            * {
+                text-align: left;
+                padding-left: 0;
+            }
+            a {
+                margin-top: 0.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .transform {
+        h2 {
+            padding-top: 0;
+        }
+    }
+    .part2 {
+        display: flex;
+        flex-direction: row;
+        article {
+            flex: 1;
+            img {
+                width: 50vw;
+            }
+        }
+        h2 {
+            padding-top: calc(1.5rem + 24vw);
+            font-size: 0.8rem;
+        }
+        p{
+            padding: 1rem 6rem;
+            font-size: 0.5rem;
+        }
+    }
+    .blue {
+        picture {
+            right: 0;
+        }
+        img {
+            margin-left: 50vw;
+        }
+    }
+    .part3 {
+        &_container {
+            display: flex;
+        }
+        h2 {
+            font-size: 0.6rem;
+        }
+        p {
+            padding: 1rem 1rem;
+            font-size: 0.6rem;
+        }
+        h3 {
+            font-size: 0.6rem;
+        }
+        h4 {
+            font-size: 0.4rem;
+        }
+    }
+    .part4 {
+        display: flex;
+    }
+    footer {
+        .logo {
+            padding-left: 12px;
+        }
+        ul {
+            margin: 0 15rem;
+        }
+        a {
+            font-size: 0.6rem;
+        }
+        .ulIcons {
+            width: 20%;
+            margin: 2rem auto 3rem auto;
+        }
     }
 }
