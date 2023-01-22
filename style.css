@@ -172,11 +172,16 @@ main a:hover .underline {
   opacity: 1;
 }
 
+.picture {
+  width: 50%;
+}
+
 .transform {
   background-color: hsl(0deg, 0%, 100%);
 }
 .transform img {
   width: 100%;
+  height: 100%;
 }
 .transform aside {
   background-color: white;
@@ -195,6 +200,7 @@ main a:hover .underline {
 }
 .standOut img {
   width: 100%;
+  height: 100%;
 }
 .standOut aside {
   background-color: white;
@@ -407,6 +413,7 @@ footer .ulIcons img {
   }
   .part2 article img {
     width: 50vw;
+    overflow: hidden;
   }
   .part2 h2 {
     padding-top: calc(1.5rem + 20vw);

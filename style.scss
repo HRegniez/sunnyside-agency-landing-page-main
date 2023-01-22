@@ -196,10 +196,14 @@ main {
         }
     }
 }
+.picture {
+    width: 50%;
+}
 .transform {
     background-color: $clr-neut5;
     img {
         width: 100%;
+        height: 100%;
     }
 
     aside {
@@ -222,6 +226,7 @@ main {
 
     img {
         width: 100%;
+        height: 100%;
     }
     aside {
         background-color: white;
@@ -458,6 +463,7 @@ footer {
             flex: 1;
             img {
                 width: 50vw;
+                overflow: hidden;
             }
         }
         h2 {
